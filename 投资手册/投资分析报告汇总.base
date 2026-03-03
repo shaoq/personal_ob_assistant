@@ -1,0 +1,107 @@
+filters:
+  and:
+    - file.inFolder("投资手册/投资报告")
+    - file.hasTag("投资报告")
+    - file.ext == "md"
+formulas:
+  评级图标: if(评级星级 == 5, "⭐⭐⭐⭐⭐", if(评级星级 == 4, "⭐⭐⭐⭐", if(评级星级 == 3, "⭐⭐⭐", if(评级星级 == 2, "⭐⭐", if(评级星级 == 1, "⭐", "未评级")))))
+  更新状态: if(是否有更新, "✅ 是", "❌ 否")
+  报告链接: link(file.path, "查看报告")
+  市值格式化: if(市值, 市值.toString() + "元", "")
+properties:
+  股票名称:
+    displayName: 股票名称
+  股票代码:
+    displayName: 股票代码
+  综合评级:
+    displayName: 综合评级
+  所属行业:
+    displayName: 所属行业
+  市值:
+    displayName: 市值
+  报告日期:
+    displayName: 报告日期
+  是否有更新:
+    displayName: 是否有更新
+  formula.评级图标:
+    displayName: 评级
+  formula.更新状态:
+    displayName: 更新
+  formula.报告链接:
+    displayName: 报告链接
+views:
+  - type: table
+    name: 按评级分组
+    groupBy:
+      property: 综合评级
+      direction: DESC
+    order:
+      - formula.评级图标
+      - 股票名称
+      - 股票代码
+      - 综合评级
+      - 所属行业
+      - 市值
+      - 报告日期
+      - formula.更新状态
+      - formula.报告链接
+    sort:
+      - property: formula.更新状态
+        direction: DESC
+      - property: formula.报告链接
+        direction: ASC
+  - type: table
+    name: 全部报告
+    order:
+      - formula.评级图标
+      - 股票名称
+      - 股票代码
+      - 综合评级
+      - 所属行业
+      - 市值
+      - 报告日期
+      - formula.更新状态
+      - formula.报告链接
+    limit: 50
+  - type: table
+    name: 待更新报告
+    filters:
+      and:
+        - 是否有更新 == false
+    order:
+      - formula.评级图标
+      - 股票名称
+      - 股票代码
+      - 综合评级
+      - 所属行业
+      - 市值
+      - 报告日期
+      - formula.报告链接
+  - type: table
+    name: 强烈推荐
+    filters:
+      or:
+        - 综合评级 == "买入"
+        - 综合评级 == "增持"
+    order:
+      - formula.评级图标
+      - 股票名称
+      - 股票代码
+      - 综合评级
+      - 所属行业
+      - 市值
+      - 报告日期
+      - formula.报告链接
+  - type: table
+    name: 按行业分组
+    groupBy:
+      property: 所属行业
+      direction: ASC
+    order:
+      - formula.评级图标
+      - 股票名称
+      - 股票代码
+      - 综合评级
+      - 市值
+      - 报告日期
+      - formula.报告链接
