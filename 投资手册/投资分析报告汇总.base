@@ -5,7 +5,7 @@ filters:
     - file.ext == "md"
 formulas:
   评级图标: if(评级星级 == 5, "⭐⭐⭐⭐⭐", if(评级星级 == 4, "⭐⭐⭐⭐", if(评级星级 == 3, "⭐⭐⭐", if(评级星级 == 2, "⭐⭐", if(评级星级 == 1, "⭐", "未评级")))))
-  更新状态: if(是否有更新, "✅ 是", "❌ 否")
+  更新状态: if(是否有更新, "✅ 是", "⚪ 否")
   报告链接: link(file.path, "查看报告")
   市值格式化: if(市值, 市值.toString() + "元", "")
   评级排序: if(综合评级 == "强力买入", "1-强力买入", if(综合评级 == "买入", "2-买入", if(综合评级 == "增持", "3-增持", if(综合评级 == "观望", "4-观望", if(综合评级 == "回避", "5-回避", "9-" + 综合评级)))))
@@ -65,9 +65,9 @@ views:
       - formula.更新状态
       - formula.报告链接
     sort:
-      - property: 评级分数
-        direction: DESC
       - property: formula.更新状态
+        direction: DESC
+      - property: 评级分数
         direction: DESC
     columnSize:
       note.评级分数: 104
