@@ -16,7 +16,10 @@
       "mcp__zread__read_file",
       "Bash(head:*)",
       "Bash(git stash:*)",
-      "Bash(git stash pop:*)"
+      "Bash(git stash pop:*)",
+      "Bash(networksetup:*)",
+      "Bash(nslookup:*)",
+      "Bash(ping:*)"
     ]
   }
 }
