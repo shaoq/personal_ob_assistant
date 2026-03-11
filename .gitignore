@@ -6,3 +6,6 @@
 
 # OMC 状态文件
 .omc/
+
+# 分析状态目录
+投资手册/.analysis_states/

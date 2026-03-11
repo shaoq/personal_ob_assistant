@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "created_at": "",
+  "updated_at": "",
+  "stock": {
+    "code": "",
+    "name": ""
+  },
+  "paths": {
+    "obsidian_vault": "",
+    "investment_handbook": ""
+  },
+  "industry": {
+    "name": "",
+    "attribute": "",
+    "stage": "",
+    "match_reason": "",
+    "main_business": ""
+  },
+  "financial_data": {
+    "p1_core": {
+      "revenue_cagr": "",
+      "net_profit_avg": null,
+      "net_profit_3y": [],
+      "deducted_net_profit": "",
+      "gross_margin": "",
+      "net_margin": "",
+      "debt_ratio": "",
+      "operating_cash_flow": "",
+      "ocf_to_net_profit": "",
+      "receivable_turnover_days": "",
+      "roe": "",
+      "market_cap": "",
+      "net_assets_per_share": ""
+    },
+    "p2_market": {
+      "industry_cagr": "",
+      "policy_support": "",
+      "tech_trend": "",
+      "competition_pattern": "",
+      "company_market_share": "",
+      "main_competitors": "",
+      "industry_avg_pe": "",
+      "industry_avg_pb": ""
+    },
+    "p2_5_type_identification": {
+      "profit_growth_std_dev": null,
+      "new_business_ratio": null,
+      "new_business_growth": null,
+      "new_business_ratio_change": null,
+      "new_business_industry_cagr": null,
+      "rd_ratio": null,
+      "new_direction_rd_ratio": null,
+      "management_transition_statement": "",
+      "new_business_industry_stage": "",
+      "new_business_head_customer_validation": "",
+      "industry_penetration": null,
+      "industry_tech_maturity": "",
+      "industry_market_size": "",
+      "company_market_rank": "",
+      "company_head_customer_validation": "",
+      "company_core_patents": "",
+      "order_to_revenue": null,
+      "capacity_expansion_plan": null,
+      "business_volume_growth": null,
+      "customer_structure_optimization": ""
+    },
+    "p3_valuation": {
+      "pe_ttm": "",
+      "pe_dynamic": "",
+      "pb": "",
+      "peg": "",
+      "ps": ""
+    },
+    "data_completeness": ""
+  },
+  "stock_type": {
+    "final_type": "",
+    "identification_layers": {
+      "layer1_industry": {
+        "attribute": "",
+        "stage": "",
+        "reason": ""
+      },
+      "layer2_financial": {
+        "revenue_cagr": "",
+        "profit_status": "",
+        "volatility_check": "",
+        "transition_check": "",
+        "reason": ""
+      },
+      "layer3_forward": {
+        "indicators_met": [],
+        "reason": ""
+      }
+    },
+    "identification_reason": ""
+  },
+  "weight_system": {
+    "行业前景": "",
+    "公司竞争力": "",
+    "成长性": "",
+    "财务健康度": "",
+    "估值合理性": ""
+  },
+  "data_missing": {
+    "missing_items": [],
+    "missing_percentage": ""
+  },
+  "status": "in_progress",
+  "next_phase": "phase2",
+  "error": null
+}

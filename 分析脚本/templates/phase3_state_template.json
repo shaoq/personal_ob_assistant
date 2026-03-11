@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "created_at": "",
+  "updated_at": "",
+  "phase2_state_file": "",
+  "stock": {
+    "code": "",
+    "name": ""
+  },
+  "file_info": {
+    "file_name": "",
+    "file_path": "",
+    "save_success": false
+  },
+  "validation": {
+    "yaml_format": {
+      "passed": false,
+      "issues": []
+    },
+    "data_completeness": {
+      "passed": false,
+      "issues": []
+    },
+    "markdown_format": {
+      "passed": false,
+      "issues": []
+    },
+    "chapter_structure": {
+      "passed": false,
+      "issues": []
+    },
+    "base_view": {
+      "passed": false,
+      "issues": []
+    }
+  },
+  "final_report": {
+    "comprehensive_rating": "",
+    "rating_star": null,
+    "file_path": ""
+  },
+  "exception_handling": {
+    "needed": false,
+    "exception_type": "",
+    "resolution": ""
+  },
+  "status": "in_progress",
+  "completion_reported": false,
+  "error": null
+}

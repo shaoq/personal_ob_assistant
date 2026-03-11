@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "created_at": "",
+  "updated_at": "",
+  "phase1_state_file": "",
+  "stock": {
+    "code": "",
+    "name": ""
+  },
+  "stock_type": {
+    "final_type": "",
+    "identification_reason": ""
+  },
+  "conditional_data": {
+    "p4_bonus_deduction": {
+      "customer_concentration": "",
+      "supplier_concentration": "",
+      "rd_ratio": "",
+      "overseas_revenue_ratio": "",
+      "order_to_revenue": "",
+      "consecutive_3y_growth": "",
+      "growth_trend": "",
+      "inventory_turnover_change": "",
+      "cash_reserve_ratio": "",
+      "dividend_status": "",
+      "major_litigation": "",
+      "industry_penetration": "",
+      "global_competitiveness": "",
+      "overcapacity_risk": "",
+      "tech_substitution_risk": ""
+    },
+    "p4_1_extended_business": {
+      "has_extended_business": false,
+      "extended_direction": "",
+      "extended_revenue_ratio": null,
+      "extended_revenue_growth": null,
+      "extended_industry_stage": "",
+      "extended_head_customer_validation": "",
+      "extended_core_tech": ""
+    },
+    "p5_transition_scoring": {
+      "new_business_order": "",
+      "new_business_head_customer": "",
+      "new_business_gross_margin_compare": "",
+      "transition_duration": "",
+      "new_business_capex": "",
+      "original_business_growth_change": ""
+    },
+    "p6_cycle_scoring": {
+      "current_cycle_position": "",
+      "historical_pe_avg": ""
+    }
+  },
+  "five_dimension_scores": {
+    "industry_prospect": {
+      "base_score": null,
+      "bonus_factors": [],
+      "deduction_factors": [],
+      "final_score": null
+    },
+    "company_competitiveness": {
+      "base_score": null,
+      "bonus_factors": [],
+      "deduction_factors": [],
+      "final_score": null
+    },
+    "growth": {
+      "base_score": null,
+      "bonus_factors": [],
+      "deduction_factors": [],
+      "final_score": null
+    },
+    "financial_health": {
+      "base_score": null,
+      "bonus_factors": [],
+      "deduction_factors": [],
+      "final_score": null
+    },
+    "valuation_rationality": {
+      "base_score": null,
+      "bonus_factors": [],
+      "deduction_factors": [],
+      "final_score": null
+    }
+  },
+  "comprehensive_scoring": {
+    "weight_system_used": "",
+    "base_composite_score": null,
+    "growth_coefficient": null,
+    "growth_coefficient_reason": "",
+    "extended_business_bonus": null,
+    "extended_business_reason": "",
+    "final_score": null,
+    "final_score_capped": null
+  },
+  "rating": {
+    "comprehensive_rating": "",
+    "rating_star": null,
+    "rating_reason": ""
+  },
+  "report_content": {
+    "yaml_front_matter": "",
+    "markdown_body": ""
+  },
+  "status": "in_progress",
+  "next_phase": "phase3",
+  "error": null
+}
