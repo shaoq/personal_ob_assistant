@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "description": "阶段4摘要文件，记录最终报告状态",
+  "created_at": "",
+
+  "stock_info": {
+    "code": "",
+    "name": ""
+  },
+
+  "rating": {
+    "comprehensive_rating": "",
+    "rating_star": null,
+    "final_score": null
+  },
+
+  "report_info": {
+    "file_path": "",
+    "file_name": "",
+    "save_success": false
+  },
+
+  "validation_summary": {
+    "yaml_format": false,
+    "data_completeness": false,
+    "markdown_format": false,
+    "chapter_structure": false
+  },
+
+  "status": "completed"
+}

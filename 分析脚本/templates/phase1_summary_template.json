@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "description": "阶段1摘要文件，用于向后续阶段传递精简信息",
+  "created_at": "",
+
+  "stock_info": {
+    "code": "",
+    "name": ""
+  },
+
+  "stock_type": {
+    "final_type": "",
+    "identification_reason": ""
+  },
+
+  "industry_info": {
+    "name": "",
+    "attribute": "",
+    "stage": ""
+  },
+
+  "weight_system": {
+    "行业前景": "",
+    "公司竞争力": "",
+    "成长性": "",
+    "财务健康度": "",
+    "估值合理性": ""
+  },
+
+  "data_completeness": {
+    "percentage": "",
+    "missing_items": []
+  },
+
+  "key_files": {
+    "full_state": "phase1_state.json",
+    "data_dir": "phase1_data/"
+  },
+
+  "status": "completed"
+}

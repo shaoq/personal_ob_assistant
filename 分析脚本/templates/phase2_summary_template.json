@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "description": "阶段2摘要文件，用于向后续阶段传递精简信息",
+  "created_at": "",
+
+  "stock_info": {
+    "code": "",
+    "name": ""
+  },
+
+  "stock_type": {
+    "final_type": "",
+    "identification_reason": ""
+  },
+
+  "industry_info": {
+    "name": "",
+    "attribute": "",
+    "stage": ""
+  },
+
+  "rating": {
+    "comprehensive_rating": "",
+    "rating_star": null,
+    "final_score": null,
+    "growth_coefficient": null,
+    "growth_coefficient_reason": ""
+  },
+
+  "five_dimension_summary": {
+    "industry_prospect": null,
+    "company_competitiveness": null,
+    "growth": null,
+    "financial_health": null,
+    "valuation_rationality": null
+  },
+
+  "key_files": {
+    "full_state": "phase2_state.json"
+  },
+
+  "status": "completed"
+}

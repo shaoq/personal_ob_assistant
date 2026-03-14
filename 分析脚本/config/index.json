@@ -1,0 +1,220 @@
+{
+  "version": "1.0",
+  "description": "配置文件索引，用于按需加载配置内容以优化 Context 消耗",
+  "last_updated": "2026-03-14",
+
+  "config_files": {
+    "stock_type_rules": {
+      "file": "stock_type_rules.md",
+      "compact_file": "stock_type_rules_compact.md",
+      "purpose": "阶段1 - 股票类型识别",
+      "tokens_estimate": 3500,
+      "compact_tokens_estimate": 1500,
+      "usage_phase": [1],
+      "sections": {
+        "三层识别流程": { "start": 8, "end": 16 },
+        "第一层行业属性判断": { "start": 20, "end": 36 },
+        "第二层财务指标验证": { "start": 40, "end": 91 },
+        "第三层潜力指标验证": { "start": 95, "end": 115 },
+        "股票类型汇总表": { "start": 119, "end": 135 },
+        "早期成长股定义": { "start": 139, "end": 150 },
+        "早期转型股定义": { "start": 154, "end": 166 },
+        "类型识别所需数据": { "start": 170, "end": 182 }
+      }
+    },
+
+    "industry_classification": {
+      "file": "industry_classification.md",
+      "compact_file": "industry_classification_compact.md",
+      "purpose": "阶段1 - 行业属性和阶段判断",
+      "tokens_estimate": 2500,
+      "compact_tokens_estimate": 1000,
+      "usage_phase": [1],
+      "sections": {
+        "行业分类标准": { "start": 8, "end": 14 },
+        "高成长赛道清单": { "start": 18, "end": 28 },
+        "高成长赛道识别关键字": { "start": 32, "end": 40 },
+        "延伸业务识别规则": { "start": 52, "end": 97 }
+      }
+    },
+
+    "industry_stages": {
+      "file": "industry_stages.md",
+      "compact_file": "industry_stages_compact.md",
+      "purpose": "阶段1 - 高成长赛道行业阶段判断",
+      "tokens_estimate": 2500,
+      "compact_tokens_estimate": 800,
+      "usage_phase": [1],
+      "sections": {
+        "行业阶段分类": { "start": 8, "end": 16 },
+        "行业阶段判断逻辑": { "start": 20, "end": 28 },
+        "各阶段特征详解": { "start": 32, "end": 87 },
+        "行业阶段与股票类型对应": { "start": 91, "end": 101 }
+      }
+    },
+
+    "scoring_standards": {
+      "file": "scoring_standards.md",
+      "compact_file": "scoring_standards_compact.md",
+      "purpose": "阶段2 - 五维度评分计算",
+      "tokens_estimate": 4500,
+      "compact_tokens_estimate": 2000,
+      "usage_phase": [2],
+      "sections": {
+        "评分计算原则": { "start": 8, "end": 18 },
+        "行业前景评分": { "start": 21, "end": 47 },
+        "公司竞争力评分": { "start": 50, "end": 78 },
+        "成长性评分": { "start": 81, "end": 109 },
+        "财务健康度评分": { "start": 113, "end": 143 },
+        "估值合理性评分": { "start": 146, "end": 182 }
+      }
+    },
+
+    "weight_tables": {
+      "file": "weight_tables.md",
+      "compact_file": "weight_tables_compact.md",
+      "purpose": "阶段2 - 根据股票类型选择权重",
+      "tokens_estimate": 3000,
+      "compact_tokens_estimate": 1200,
+      "usage_phase": [2],
+      "sections": {
+        "动态权重评分体系": { "start": 8, "end": 24 },
+        "权重设计逻辑": { "start": 28, "end": 98 },
+        "转型股双轨制评分": { "start": 101, "end": 117 }
+      }
+    },
+
+    "growth_coefficient": {
+      "file": "growth_coefficient.md",
+      "compact_file": "growth_coefficient_compact.md",
+      "purpose": "阶段2 - 成长系数计算",
+      "tokens_estimate": 3000,
+      "compact_tokens_estimate": 1200,
+      "usage_phase": [2],
+      "sections": {
+        "成长系数机制": { "start": 8, "end": 28 },
+        "早期成长股成长系数": { "start": 34, "end": 41 },
+        "早期转型股成长系数": { "start": 44, "end": 50 },
+        "高成长股成长系数": { "start": 53, "end": 59 },
+        "转型股成长系数": { "start": 62, "end": 70 },
+        "潜力转型股成长系数": { "start": 73, "end": 82 },
+        "潜力成长股成长系数": { "start": 85, "end": 116 },
+        "成长系数上限约束": { "start": 120, "end": 126 },
+        "适用范围汇总": { "start": 130, "end": 140 }
+      }
+    },
+
+    "validation_rules": {
+      "file": "validation_rules.md",
+      "compact_file": "validation_rules_compact.md",
+      "purpose": "阶段4 - 报告验证",
+      "tokens_estimate": 3500,
+      "compact_tokens_estimate": 1500,
+      "usage_phase": [4],
+      "sections": {
+        "YAML格式验证清单": { "start": 8, "end": 25 },
+        "YAML必需字段清单": { "start": 29, "end": 46 },
+        "评级星级确定规则": { "start": 50, "end": 58 },
+        "Markdown格式验证": { "start": 62, "end": 73 },
+        "章节结构验证": { "start": 77, "end": 90 },
+        "数据完整性验证": { "start": 94, "end": 103 }
+      }
+    }
+  },
+
+  "stock_type_index": {
+    "早期成长股": {
+      "识别规则": "stock_type_rules.md#早期成长股定义",
+      "权重": "weight_tables.md#早期成长股权重",
+      "成长系数": "growth_coefficient.md#早期成长股成长系数"
+    },
+    "早期转型股": {
+      "识别规则": "stock_type_rules.md#早期转型股定义",
+      "权重": "weight_tables.md#早期转型股权重",
+      "成长系数": "growth_coefficient.md#早期转型股成长系数"
+    },
+    "高成长股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#高成长股权重",
+      "成长系数": "growth_coefficient.md#高成长股成长系数"
+    },
+    "成长股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#成长股权重",
+      "成长系数": "不适用（系数=1.00）"
+    },
+    "潜力成长股": {
+      "识别规则": "stock_type_rules.md#第三层潜力指标验证",
+      "权重": "weight_tables.md#潜力成长股权重",
+      "成长系数": "growth_coefficient.md#潜力成长股成长系数"
+    },
+    "成熟股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#成熟股权重",
+      "成长系数": "不适用（系数=1.00）"
+    },
+    "周期股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#周期股权重",
+      "成长系数": "不适用（系数=1.00）"
+    },
+    "亏损股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#亏损股权重",
+      "成长系数": "不适用（系数=1.00）"
+    },
+    "转型股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#转型股权重",
+      "成长系数": "growth_coefficient.md#转型股成长系数"
+    },
+    "潜力转型股": {
+      "识别规则": "stock_type_rules.md#股票类型汇总表",
+      "权重": "weight_tables.md#潜力转型股权重",
+      "成长系数": "growth_coefficient.md#潜力转型股成长系数"
+    }
+  },
+
+  "phase_loading_guide": {
+    "phase1": {
+      "description": "数据准备与类型识别",
+      "required_configs": ["stock_type_rules", "industry_classification", "industry_stages"],
+      "loading_strategy": "读取索引后按需加载具体章节",
+      "estimated_tokens": {
+        "full": 8500,
+        "compact": 3300,
+        "indexed": 2000
+      }
+    },
+    "phase2": {
+      "description": "评分计算",
+      "required_configs": ["scoring_standards", "weight_tables", "growth_coefficient"],
+      "loading_strategy": "根据股票类型只加载对应权重行",
+      "estimated_tokens": {
+        "full": 10500,
+        "compact": 4400,
+        "indexed": 2500
+      }
+    },
+    "phase3": {
+      "description": "报告生成",
+      "required_configs": [],
+      "loading_strategy": "无需加载配置文件",
+      "estimated_tokens": {
+        "full": 0,
+        "compact": 0,
+        "indexed": 0
+      }
+    },
+    "phase4": {
+      "description": "验证与保存",
+      "required_configs": ["validation_rules"],
+      "loading_strategy": "读取验证清单章节",
+      "estimated_tokens": {
+        "full": 3500,
+        "compact": 1500,
+        "indexed": 800
+      }
+    }
+  }
+}

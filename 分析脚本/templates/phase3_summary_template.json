@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "description": "阶段3摘要文件，用于向阶段4传递精简信息",
+  "created_at": "",
+
+  "stock_info": {
+    "code": "",
+    "name": ""
+  },
+
+  "stock_type": {
+    "final_type": ""
+  },
+
+  "rating": {
+    "comprehensive_rating": "",
+    "rating_star": null,
+    "final_score": null
+  },
+
+  "report_summary": {
+    "core_logic": "",
+    "operation_suggestion": "",
+    "yaml_ready": false,
+    "markdown_ready": false
+  },
+
+  "key_files": {
+    "full_state": "phase3_state.json"
+  },
+
+  "status": "completed"
+}
