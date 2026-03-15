@@ -19,7 +19,13 @@
       "Bash(git stash pop:*)",
       "Bash(networksetup:*)",
       "Bash(nslookup:*)",
-      "Bash(ping:*)"
+      "Bash(ping:*)",
+      "Bash(\"/Users/jie.hua/Documents/Obsidian Vault/personal_ob_assistant/投资手册/投资报告/强一股份\\(688809\\)-投资分析报告.md\":*)",
+      "mcp__plugin_oh-my-claudecode_t__state_read",
+      "Bash(git fetch:*)",
+      "mcp__plugin_oh-my-claudecode_t__state_write",
+      "mcp__plugin_oh-my-claudecode_t__state_list_active",
+      "mcp__plugin_oh-my-claudecode_t__state_clear"
     ]
   }
 }
